@@ -1,6 +1,6 @@
 # Purbachal Apparel Limited - Official Website V2
 
-This is the official website for Purbachal Apparel Limited (PAL), a woven garment manufacturer and 100% exporter based in Gazipur, Bangladesh.
+This is the official demo website for Purbachal Apparel Limited, a woven garment manufacturer and 100% exporter based in Gazipur, Bangladesh.
 
 ## About the Project
 
@@ -42,3 +42,7 @@ Purbachal Apparel Limited
 South Panjora, Ward No. 05, Nagori, Kaliganj, Gazipur-1720, Bangladesh  
 info@purbachalapparel.com  
 +880 1713 001008
+
+## Built By
+
+Designed and developed by [SKMMT](http://skmmt.rootexception.com/).
