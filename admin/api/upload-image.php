@@ -7,11 +7,26 @@ header('Content-Type: application/json; charset=utf-8');
 requireLogin();
 requireCsrf();
 
-$allowed = ['gallery', 'kids', 'mens', 'womens', 'pages'];
-$dest = preg_replace('/[^a-z\/]/', '', strtolower((string)($_POST['dest']??'gallery')));
-if (empty($_FILES['file'])) { echo json_encode(['ok' => false, 'message' => 'No file.']); exit; }
+$allowed = ['gallery', 'pages', 'kids', 'mens', 'womens'];
+$dest    = preg_replace('/[^a-z]/', '', strtolower((string)($_POST['dest'] ?? 'gallery')));
+if (!in_array($dest, $allowed, true)) {
+    echo json_encode(['ok' => false, 'message' => 'Invalid destination.']); exit;
+}
+if (empty($_FILES['file'])) {
+    echo json_encode(['ok' => false, 'message' => 'No file provided.']); exit;
+}
 $full = UPLOAD_DIR . $dest . '/';
-if (!is_dir($full)) { echo json_encode(['ok' => false, 'message' => 'Invalid destination.']); exit; }
+if (!is_dir($full) && !mkdir($full, 0755, true)) {
+    echo json_encode(['ok' => false, 'message' => 'Cannot create upload directory.']); exit;
+}
 $res = validateAndProcessUpload($_FILES['file'], $full);
-if (!$res['ok']) { echo json_encode(['ok' => false, 'message' => $res['error']]); exit; }
-echo json_encode(['ok' => true, 'message' => 'Uploaded.', 'filename' => $res['filename'], 'url' => '../uploads/' . $dest . '/' . $res['filename']]);
+if (!$res['ok']) {
+    echo json_encode(['ok' => false, 'message' => $res['error']]); exit;
+}
+echo json_encode([
+    'ok'       => true,
+    'message'  => 'Uploaded.',
+    'filename' => $res['filename'],
+    'url'      => '../uploads/' . $dest . '/' . $res['filename'],
+    'path'     => 'uploads/' . $dest . '/' . $res['filename'],
+]);

@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         for ($i = 0; $i < $count; $i++) {
             $file = [
                 'name' => $_FILES['images']['name'][$i],
-                'type' =>=> $_FILES['images']['type'][$i],
+                'type' => $_FILES['images']['type'][$i],
                 'tmp_name' => $_FILES['images']['tmp_name'][$i],
                 'error' => $_FILES['images']['error'][$i],
                 'size' => $_FILES['images']['size'][$i],
