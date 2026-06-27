@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title><?php echo e($pageTitle); ?> &mdash; PAL CMS</title>
+<title><?php echo e($pageTitle); ?> | PAL CMS</title>
 <link rel="stylesheet" href="assets/admin.css">
 <?php echo csrfMeta(); ?>
 </head>
@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </div>
   <?php foreach ($cats as $cat => $catLabel): $imgs = $prods[$cat] ?? []; ?>
   <div class="card mb-4">
-    <div class="card-header"><?php echo e($catLabel); ?> (<?php echo count($imgs); ?> images) <span class="text-muted small">&mdash; drag to reorder</span></div>
+    <div class="card-header"><?php echo e($catLabel); ?> (<?php echo count($imgs); ?> images) <span class="text-muted small">drag to reorder</span></div>
     <div class="card-body">
       <div class="gallery-grid sortable-gallery" id="grid-<?php echo e($cat); ?>" data-cat="<?php echo e($cat); ?>">
         <?php foreach ($imgs as $img): ?>

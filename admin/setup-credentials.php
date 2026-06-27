@@ -36,7 +36,7 @@ generateCsrfToken();
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CMS Setup &mdash; Purbachal Apparel</title>
+<title>CMS Setup | Purbachal Apparel</title>
 <link rel="stylesheet" href="assets/admin.css">
 <style>
 body{display:flex;align-items:center;justify-content:center;min-height:100vh;background:var(--bg-page);}

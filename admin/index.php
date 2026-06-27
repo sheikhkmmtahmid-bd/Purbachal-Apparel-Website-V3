@@ -49,7 +49,7 @@ $site = jsonRead(DATA_DIR . 'site.json');
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Admin Login &mdash; <?php echo e($site['company_name']); ?></title>
+<title>Admin Login | <?php echo e($site['company_name']); ?></title>
 <link rel="stylesheet" href="assets/admin.css">
 <?php echo csrfMeta(); ?>
 </head>
