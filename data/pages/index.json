@@ -1,0 +1,36 @@
+{
+  "title": "Home | Purbachal Apparel Limited",
+  "meta_desc": "Purbachal Apparel Limited: Leading woven garment manufacturers and 100% exporters from Bangladesh. OEKO-TEX, SEDEX, GOTS, WRAP certified.",
+  "hero_badge": "Established 2012 · Manufacturing Since 2017",
+  "hero_title": "Ethical.<br><span>Efficient.<\/span><br>Exceptional.",
+  "hero_subtitle": "Purbachal Apparel Limited is a leading woven garment manufacturer and 100% exporter from Bangladesh, delivering premium quality apparel to retailers across Europe and beyond.",
+  "hero_cta1_text": "Contact Us",
+  "hero_cta1_link": "contact.php",
+  "hero_cta2_text": "View Our Products",
+  "hero_cta2_link": "products.php",
+  "hero_card1_title": "2,000+ Skilled Workers",
+  "hero_card1_desc": "Dedicated team ensuring quality at every stage of production",
+  "hero_card2_title": "Global Export Reach",
+  "hero_card2_desc": "Serving leading retailers across Europe and international markets",
+  "services": [
+    {"number":"01","title":"We Design Garments","desc":"From woven tops to lightweight bottoms, nightwear, and kidswear; every style is crafted for global fashion demands with innovation and quality at the core."},
+    {"number":"02","title":"We Manufacture","desc":"With 20 modern production lines and a monthly capacity of 750,000 pieces, our 2,000+ skilled team ensures on-time delivery while maintaining the highest ethical and sustainable standards."},
+    {"number":"03","title":"We Export Globally","desc":"PAL proudly serves leading international retailers worldwide, with an annual turnover of USD 32 million, building long-term partnerships through quality, compliance, and competitive pricing."}
+  ],
+  "about_title": "A Trusted Manufacturer Since 2012",
+  "about_para1": "Purbachal Apparel Limited (PAL) is a 100% export-oriented woven garment manufacturer established in 2012 and operational since 2017. Located in Gazipur, Bangladesh, we specialize in producing high-quality woven tops, bottoms, nightwear, kidswear, and swimwear for leading European and global retailers.",
+  "about_checklist": [
+    "20+ modern production lines with a monthly capacity of 750,000 pieces",
+    "100% export-oriented with an annual turnover of USD 32 million",
+    "Multiple international certifications: OEKO-TEX, GOTS, SEDEX, WRAP & more",
+    "Over 60% female workforce with a strong focus on worker welfare",
+    "Committed to environmental sustainability with a 300 KW solar energy target"
+  ],
+  "process": [
+    {"number":"01","title":"Product Development & Sampling","desc":"We collaborate closely with clients to develop styles, select fabrics, and produce accurate samples, ensuring alignment with market expectations before bulk production begins."},
+    {"number":"02","title":"Quality Control & Compliance","desc":"Our dedicated quality assurance team conducts multi-stage inspections throughout production to maintain international quality standards and regulatory compliance."},
+    {"number":"03","title":"Global Delivery & Client Support","desc":"We ensure on-time delivery to global destinations with full documentation support, backed by a responsive client service team dedicated to long-term partnerships."}
+  ],
+  "cta_title": "Ready to Source From Bangladesh?",
+  "cta_desc": "Partner with a manufacturer that delivers quality, compliance, and on-time shipping to global markets."
+}

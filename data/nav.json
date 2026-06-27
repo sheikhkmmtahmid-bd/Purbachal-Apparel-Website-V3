@@ -1,0 +1,14 @@
+{
+  "pages": [
+    {"slug":"index","label":"Home","file":"index.php","order":1,"builtin":true,"dropdown":[]},
+    {"slug":"about","label":"About Us","file":"about.php","order":2,"builtin":true,"dropdown":[
+      {"slug":"team","label":"Our Team","file":"team.php"}
+    ]},
+    {"slug":"clients","label":"Our Clients","file":"clients.php","order":3,"builtin":true,"dropdown":[]},
+    {"slug":"certificates","label":"Certifications","file":"certificates.php","order":4,"builtin":true,"dropdown":[]},
+    {"slug":"products","label":"Our Products","file":"products.php","order":5,"builtin":true,"dropdown":[]},
+    {"slug":"sustainability","label":"Sustainability","file":"sustainability.php","order":6,"builtin":true,"dropdown":[]},
+    {"slug":"contact","label":"Contact Us","file":"contact.php","order":7,"builtin":true,"dropdown":[]}
+  ],
+  "cta":{"label":"Get a Quote","file":"contact.php"}
+}

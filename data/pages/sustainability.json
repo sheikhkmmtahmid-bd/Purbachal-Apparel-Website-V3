@@ -1,0 +1,24 @@
+{
+  "title": "Sustainability | Purbachal Apparel Limited",
+  "meta_desc": "Purbachal Apparel Limited's commitment to sustainability: solar energy, ethical manufacturing, worker welfare, and environmental responsibility.",
+  "hero_title": "Our Commitment to Sustainability",
+  "hero_desc": "At Purbachal Apparel, sustainability is not an afterthought — it is woven into the fabric of everything we do.",
+  "pillars": [
+    {"title":"Environmental Responsibility","text":"We are investing in renewable energy, targeting 300 KW of solar capacity, reducing water consumption, and minimizing waste across all operations.","icon":"leaf"},
+    {"title":"Social Compliance","text":"Fair wages, safe working conditions, and zero tolerance for forced labor. Over 60% of our workforce are women, supported by welfare programs and continuous training.","icon":"people"},
+    {"title":"Ethical Governance","text":"Transparent supply chains, third-party audits, and strict compliance with international standards ensure we operate with the highest integrity.","icon":"shield"}
+  ],
+  "initiatives": [
+    {"title":"Solar Energy Transition","text":"Working toward 300 KW solar energy capacity to reduce our carbon footprint."},
+    {"title":"Water Conservation","text":"Implementing water recycling systems to minimize consumption in production."},
+    {"title":"Waste Reduction","text":"Fabric waste reduction programs and recycling initiatives across all departments."},
+    {"title":"Worker Welfare","text":"Health check-ups, childcare support, and financial literacy programs for all workers."},
+    {"title":"Fair Trade Practices","text":"Ensuring fair wages above minimum wage and transparent working hours."},
+    {"title":"Community Investment","text":"Supporting local schools, healthcare facilities, and skill development centers."}
+  ],
+  "csr": [
+    {"title":"Health & Safety","text":"State-of-the-art safety equipment and regular drills for all 2,000+ workers.","image":"csr-01.jpg"},
+    {"title":"Education Support","text":"Funding education programs for workers' children and local community youth.","image":"csr-02.jpg"},
+    {"title":"Green Manufacturing","text":"ISO 14001 certified environmental management system across all facilities.","image":"csr-03.jpg"}
+  ]
+}

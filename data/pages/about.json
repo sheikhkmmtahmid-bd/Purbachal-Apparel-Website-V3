@@ -1,0 +1,33 @@
+{
+  "title": "About Us | Purbachal Apparel Limited",
+  "meta_desc": "Learn about Purbachal Apparel Limited: our history, board of directors, mission, and commitment to quality and sustainability since 2012.",
+  "hero_title": "About Purbachal Apparel Limited",
+  "hero_desc": "A leading woven garment manufacturer and 100% exporter from Bangladesh, committed to quality, compliance, and sustainable practices since 2012.",
+  "company_table": [
+    {"label":"Company Name","value":"Purbachal Apparel Limited"},
+    {"label":"Year Established","value":"2012"},
+    {"label":"Year of Operation","value":"2017"},
+    {"label":"Type of Business","value":"100% Export-Oriented Woven Garment Manufacturer"},
+    {"label":"BGMEA Membership","value":"No. 6356"},
+    {"label":"ERC No.","value":"BA 26032610788220"},
+    {"label":"Monthly Capacity","value":"750,000 Pieces"},
+    {"label":"Production Lines","value":"20+ Modern Lines"},
+    {"label":"Total Workforce","value":"2,000+ Skilled Workers"},
+    {"label":"Annual Turnover","value":"USD 32 Million"}
+  ],
+  "directors": [
+    {"name":"Md. Masud Rana","role":"Managing Director","quote":"We built Purbachal Apparel on the belief that ethical manufacturing and business excellence are not opposing forces — they are the same force.","photo":"director-masud-official.png","phone":"+880 1713 001008","email":"masud@purbachalapparel.com"},
+    {"name":"Md. Naim Hossain","role":"Director","quote":"Every garment we produce is a commitment — to our clients, to our workers, and to the future of sustainable fashion.","photo":"director-naim-official.png","phone":"+880 1713 001008","email":"naim@purbachalapparel.com"}
+  ],
+  "mission": [
+    {"title":"Our Mission","text":"To deliver world-class woven garments through innovative design, ethical manufacturing, and sustainable practices that create lasting value for our global retail partners."},
+    {"title":"Our Vision","text":"To become Bangladesh's most trusted and sustainable garment manufacturer, recognized globally for quality, compliance, and positive social impact."},
+    {"title":"Our Values","text":"Integrity, Quality, Sustainability, and Partnership — these four pillars guide every decision we make, from the factory floor to the boardroom."}
+  ],
+  "culture": [
+    {"title":"Worker Welfare","text":"Over 60% of our workforce are women. We provide fair wages, safe working conditions, health facilities, and continuous skill development programs."},
+    {"title":"Environmental Commitment","text":"We are transitioning to renewable energy, targeting 300 KW of solar capacity, and continuously reducing our water and carbon footprint."},
+    {"title":"Quality Assurance","text":"Our multi-stage quality control process, backed by international certifications, ensures every piece meets the highest standards before shipment."},
+    {"title":"Community Impact","text":"We invest in the local community through education support, healthcare access, and employment opportunities for local residents."}
+  ]
+}

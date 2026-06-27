@@ -1,0 +1,30 @@
+{
+  "title": "Certifications | Purbachal Apparel Limited",
+  "meta_desc": "Purbachal Apparel Limited holds 12 international certifications including OEKO-TEX, GOTS, SEDEX, WRAP, ISO 14001, EcoVadis and more.",
+  "hero_title": "Our Certifications",
+  "hero_desc": "We hold 12 internationally recognized certifications, ensuring that our production processes meet the highest ethical, environmental, and quality standards.",
+  "certs": [
+    {"name":"RSC","logo":"cert-rsc.png"},
+    {"name":"Amfori / BSCI","logo":"cert-bsci.png"},
+    {"name":"SEDEX","logo":"cert-sedex.png"},
+    {"name":"WRAP","logo":"cert-wrap.png"},
+    {"name":"Higg Index","logo":"cert-higg.png"},
+    {"name":"ISO 14001","logo":"cert-iso14001.png"},
+    {"name":"GOTS","logo":"cert-gots.png"},
+    {"name":"OCS","logo":"cert-ocs.png"},
+    {"name":"RCS","logo":"cert-rcs.png"},
+    {"name":"OEKO-TEX 100","logo":"cert-oeko.png"},
+    {"name":"EcoVadis","logo":"cert-ecovadis.png"},
+    {"name":"Cotton Made in Africa","logo":"cert-cotton-africa.png"}
+  ],
+  "pillars": [
+    {"title":"Social Compliance","text":"We adhere to the highest social compliance standards, ensuring fair wages, safe working conditions, and zero tolerance for forced or child labor across our entire supply chain."},
+    {"title":"Environmental Standards","text":"Our ISO 14001 certification and ongoing sustainability initiatives demonstrate our commitment to minimizing environmental impact through responsible manufacturing practices."},
+    {"title":"Product Safety","text":"OEKO-TEX Standard 100 certification ensures that every fabric and finished garment we produce is tested for harmful substances and safe for all users."}
+  ],
+  "csr_cards": [
+    {"title":"Worker Welfare Programs","text":"Regular health check-ups, skills training, and welfare benefits for all workers.","image":"csr-01.jpg"},
+    {"title":"Environmental Initiatives","text":"Solar energy adoption, water recycling, and waste reduction programs.","image":"csr-02.jpg"},
+    {"title":"Community Development","text":"Supporting local education, healthcare, and economic development in Gazipur.","image":"csr-03.jpg"}
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Our Products | Purbachal Apparel Limited",
+  "meta_desc": "Browse Purbachal Apparel Limited's product range: kids wear, men's wear, and women's wear — quality woven garments for global retailers.",
+  "hero_title": "Our Products",
+  "hero_desc": "Explore our range of quality woven garments for kids, men, and women — crafted with precision for leading global retailers.",
+  "categories": {
+    "kids": [
+      "prod-kids-IMG-20250828-WA0017.jpg","prod-kids-IMG-20250828-WA0019.jpg","prod-kids-IMG-20250828-WA0021.jpg",
+      "prod-kids-IMG-20250828-WA0023.jpg","prod-kids-IMG-20250828-WA0024.jpg","prod-kids-IMG-20250828-WA00281.jpg",
+      "prod-kids-IMG-20250828-WA00301.jpg","prod-kids-IMG-20250828-WA0033.jpg","prod-kids-IMG-20250828-WA00341.jpg",
+      "prod-kids-IMG-20250828-WA00351.jpg","prod-kids-IMG-20250828-WA0037.jpg","prod-kids-IMG-20250828-WA0041.jpg",
+      "prod-kids-IMG-20250828-WA0042.jpg","prod-kids-IMG-20250828-WA0044.jpg","prod-kids-IMG-20250828-WA0046.jpg",
+      "prod-kids-IMG-20250828-WA0048.jpg","prod-kids-IMG-20250828-WA0050.jpg","prod-kids-IMG-20250828-WA0052.jpg",
+      "prod-kids-IMG-20250828-WA0054.jpg","prod-kids-IMG-20250828-WA0055.jpg","prod-kids-IMG-20250828-WA0057.jpg",
+      "prod-kids-IMG-20250828-WA0059.jpg","prod-kids-IMG-20250828-WA0061.jpg","prod-kids-IMG-20250828-WA0065.jpg",
+      "prod-kids-IMG-20250828-WA0067-1.jpg","prod-kids-IMG-20250828-WA0069-1.jpg"
+    ],
+    "mens": [
+      "prod-mens-0ddcf0ab.jpg","prod-mens-21a9787a.jpg","prod-mens-2329b77f.jpg","prod-mens-42f9eab3.jpg",
+      "prod-mens-5675b513.jpg","prod-mens-68d36f12.jpg","prod-mens-690a713f.jpg","prod-mens-6e7ac46e.jpg",
+      "prod-mens-8d0f3c7b.jpg","prod-mens-b2e8c269.jpg","prod-mens-c8a938e5.jpg","prod-mens-f6beceff.jpg"
+    ],
+    "womens": [
+      "prod-womens-1814701c.jpg","prod-womens-29df6545.jpg","prod-womens-35b514be.jpg","prod-womens-36e72a31.jpg",
+      "prod-womens-379f6b37.jpg","prod-womens-3f2b77e1.jpg","prod-womens-47afbe4c.jpg","prod-womens-49f7bf58.jpg",
+      "prod-womens-56240ea3.jpg","prod-womens-5fc400d0.jpg","prod-womens-6d10f43d.jpg","prod-womens-74e57b36.jpg",
+      "prod-womens-7679d0c5.jpg","prod-womens-7c54d093.jpg","prod-womens-7ec51375.jpg","prod-womens-86f045dd.jpg",
+      "prod-womens-8fa7dce0.jpg","prod-womens-99619399.jpg","prod-womens-9b8fd935.jpg","prod-womens-9fb500cc.jpg"
+    ]
+  }
+}

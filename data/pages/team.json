@@ -1,0 +1,17 @@
+{
+  "title": "Our Team | Purbachal Apparel Limited",
+  "meta_desc": "Meet the leadership team at Purbachal Apparel Limited: our board of directors and the skilled professionals driving our global success.",
+  "hero_title": "Our Leadership Team",
+  "hero_desc": "Meet the visionary leaders and dedicated professionals who drive Purbachal Apparel's mission of quality, sustainability, and global excellence.",
+  "directors": [
+    {"name":"Md. Masud Rana","role":"Managing Director","photo":"director-masud-official.png","quote":"We built Purbachal Apparel on the belief that ethical manufacturing and business excellence are not opposing forces — they are the same force."},
+    {"name":"Md. Naim Hossain","role":"Director","photo":"director-naim-official.png","quote":"Every garment we produce is a commitment — to our clients, to our workers, and to the future of sustainable fashion."}
+  ],
+  "stats": [
+    {"value":"2,000+","label":"Skilled Workers"},
+    {"value":"60%+","label":"Female Workforce"},
+    {"value":"20+","label":"Production Lines"},
+    {"value":"14+","label":"Years Experience"}
+  ],
+  "gallery": []
+}

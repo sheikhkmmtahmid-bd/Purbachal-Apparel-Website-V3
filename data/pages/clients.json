@@ -1,0 +1,20 @@
+{
+  "title": "Our Clients | Purbachal Apparel Limited",
+  "meta_desc": "Purbachal Apparel Limited serves leading global retailers including E.Leclerc, LC Waikiki, Mango, New Look, and more from Bangladesh.",
+  "hero_title": "Our Valued Clients",
+  "hero_desc": "We are proud to partner with some of the world's leading fashion retailers, delivering quality woven garments on time and to specification.",
+  "clients": [
+    {"name":"E.Leclerc / Siplec","logo":"client-eleclerc.png","country":"France"},
+    {"name":"LC Waikiki","logo":"client-lcwaikiki.png","country":"Turkey"},
+    {"name":"Lolaliza","logo":"client-lolaliza.png","country":"Belgium"},
+    {"name":"New Look","logo":"client-newlook.png","country":"UK"},
+    {"name":"Tendam","logo":"client-tendam.png","country":"Spain"},
+    {"name":"ZXY","logo":"client-zxy.png","country":"International"},
+    {"name":"Cortefiel","logo":"client-cortefiel.png","country":"Spain"},
+    {"name":"Premier","logo":"client-premier.png","country":"International"},
+    {"name":"Mango","logo":"client-mango.png","country":"Spain"},
+    {"name":"GEMO","logo":"client-gemo.png","country":"France"},
+    {"name":"Authentic Style","logo":"client-authenticstyle.png","country":"International"},
+    {"name":"Ragno","logo":"client-ragno.png","country":"Italy"}
+  ]
+}
