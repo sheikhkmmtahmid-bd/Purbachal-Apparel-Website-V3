@@ -342,15 +342,15 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-head); line-height: 1.2; color: var(
 .pillar-card-eco { background: linear-gradient(135deg,var(--green),#1f8045); }
 .pillar-card h3 { color: var(--white); font-size: 1.25rem; font-weight: 700; margin-bottom: 12px; }
 .pillar-card p { color: rgba(255,255,255,.8); font-size: .9375rem; }
-.pillar-icon { font-size: 2.5rem; margin-bottom: 16px; }
+.pillar-icon { width: 64px; height: 64px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; background: rgba(255,255,255,.15); color: rgba(255,255,255,.92); }
 .initiative-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
 .initiative-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 28px 24px; transition: var(--transition); }
 .initiative-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
-.initiative-icon { width: 52px; height: 52px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 16px; }
-.icon-green { background: rgba(45,173,95,.12); }
-.icon-teal  { background: rgba(14,126,135,.12); }
-.icon-blue  { background: rgba(58,116,192,.12); }
-.icon-amber { background: rgba(245,168,0,.12); }
+.initiative-icon { width: 52px; height: 52px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+.icon-green { background: rgba(45,173,95,.12); color: #1F9B50; }
+.icon-teal  { background: rgba(14,126,135,.12); color: var(--teal); }
+.icon-blue  { background: rgba(58,116,192,.12); color: #3A74C0; }
+.icon-amber { background: rgba(245,168,0,.12); color: #C47E00; }
 .initiative-card h4 { font-size: 1.0625rem; font-weight: 700; margin-bottom: 8px; }
 .initiative-card p { font-size: .9rem; color: var(--gray-500); }
 .csr-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; }
@@ -415,6 +415,10 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-head); line-height: 1.2; color: var(
 .form-input:focus,.form-select:focus,.form-textarea:focus { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(14,126,135,.12); }
 .form-textarea { resize: vertical; min-height: 130px; }
 .form-submit { width: 100%; margin-top: 8px; justify-content: center; }
+.form-result { margin-top: 16px; padding: 14px 18px; border-radius: var(--radius-md); font-size: .9375rem; font-weight: 500; line-height: 1.5; }
+.form-result-success { background: rgba(45,173,95,.1); color: #1a7a3a; border: 1px solid rgba(45,173,95,.3); }
+.form-result-error { background: rgba(179,27,42,.07); color: var(--crimson); border: 1px solid rgba(179,27,42,.2); }
+.form-result-error a { color: var(--crimson); }
 
 /* 19. CRAFT BAND */
 .craft-band { display: grid; grid-template-columns: 1fr 1fr; min-height: 300px; }

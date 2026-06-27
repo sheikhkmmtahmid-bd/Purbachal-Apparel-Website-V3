@@ -9,6 +9,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body><div class="topbar">
   <div class="container">
@@ -177,7 +178,20 @@
       <div class="contact-form-card reveal-right">
         <h3>Send Us a Message</h3>
         <p>Fill in the form below and one of our team members will get back to you within one business day.</p>
-        <form action="#" method="POST" novalidate>
+        <form id="contact-form">
+          <!-- =====================================================================
+               CONTACT FORM powered by EmailJS (emailjs.com, free tier 200/month).
+               Submissions go directly to info@purbachalapparel.com.
+               To change the destination email or any settings:
+                 1. Log in at https://dashboard.emailjs.com/ with sheikh.k.m.m.tahmid@gmail.com
+                 2. Go to Email Templates > Contact Us and update the "To Email" field
+               To change the sending Gmail account:
+                 1. Go to Email Services and reconnect a different Gmail account
+               Keys used (all public — safe in client-side code):
+                 Public Key  : mt429GxgF_853gm9a
+                 Service ID  : service_l20zm0b
+                 Template ID : template_tjydd46
+               ===================================================================== -->
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="contact-name">Full Name <span>*</span></label>
@@ -194,14 +208,14 @@
               <input type="tel" id="contact-phone" name="phone" class="form-input" placeholder="+1 234 567 8900">
             </div>
             <div class="form-group">
-              <label class="form-label" for="contact-subject">Subject</label>
-              <select id="contact-subject" name="subject" class="form-select">
+              <label class="form-label" for="contact-subject">Inquiry Type</label>
+              <select id="contact-subject" name="inquiry_type" class="form-select">
                 <option value="">Select a subject</option>
-                <option value="quote">Request a Quote</option>
-                <option value="sampling">Sample Request</option>
-                <option value="visit">Factory Visit</option>
-                <option value="partnership">Partnership Inquiry</option>
-                <option value="other">Other</option>
+                <option value="Request a Quote">Request a Quote</option>
+                <option value="Sample Request">Sample Request</option>
+                <option value="Factory Visit">Factory Visit</option>
+                <option value="Partnership Inquiry">Partnership Inquiry</option>
+                <option value="Other">Other</option>
               </select>
             </div>
           </div>
@@ -209,11 +223,51 @@
             <label class="form-label" for="contact-message">Message <span>*</span></label>
             <textarea id="contact-message" name="message" class="form-textarea" placeholder="Tell us about your requirements, product categories, quantities, and target delivery timelines..." required></textarea>
           </div>
+          <div id="form-result" class="form-result" role="alert" aria-live="polite" style="display:none"></div>
           <button type="submit" class="btn btn-primary form-submit btn-lg">
             <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
             Send Message
           </button>
         </form>
+        <script>
+        (function () {
+          emailjs.init('mt429GxgF_853gm9a');
+          var form    = document.getElementById('contact-form');
+          if (!form) return;
+          var btn     = form.querySelector('.form-submit');
+          var result  = document.getElementById('form-result');
+          var btnHTML = btn.innerHTML;
+          form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            if (!form.checkValidity()) { form.reportValidity(); return; }
+            btn.disabled  = true;
+            btn.innerHTML = 'Sending...';
+            result.style.display = 'none';
+            var params = {
+              name:         form.querySelector('[name="name"]').value,
+              email:        form.querySelector('[name="email"]').value,
+              phone:        form.querySelector('[name="phone"]').value || 'Not provided',
+              inquiry_type: form.querySelector('[name="inquiry_type"]').value || 'Not specified',
+              message:      form.querySelector('[name="message"]').value
+            };
+            emailjs.send('service_l20zm0b', 'template_tjydd46', params)
+              .then(function () {
+                result.innerHTML = 'Thank you! Your message has been sent. We will reply within one business day.';
+                result.className = 'form-result form-result-success';
+                form.reset();
+              })
+              .catch(function () {
+                result.innerHTML = 'Something went wrong. Please email us directly at <a href="mailto:info@purbachalapparel.com">info@purbachalapparel.com</a>.';
+                result.className = 'form-result form-result-error';
+              })
+              .finally(function () {
+                btn.disabled  = false;
+                btn.innerHTML = btnHTML;
+                result.style.display = 'block';
+              });
+          });
+        })();
+        </script>
       </div>
     </div>
   </div>
