@@ -2,14 +2,6 @@
 Thumbs.db
 .DS_Store
 *.log
-uploads/gallery/*
-uploads/logo/*
-uploads/favicon/*
-uploads/pages/*
-uploads/products/kids/*
-uploads/products/mens/*
-uploads/products/womens/*
-!uploads/**/.htaccess
 data/.login_attempts.json
 data/.credentials.json
 data/.reset_token.json
