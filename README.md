@@ -1,4 +1,4 @@
-# Purbachal Apparel Limited - Official Website V2
+# Purbachal Apparel Limited - Official Website V3
 
 This is the official website for Purbachal Apparel Limited, a woven garment manufacturer and 100% exporter based in Gazipur, Bangladesh.
 
