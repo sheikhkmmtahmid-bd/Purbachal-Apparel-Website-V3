@@ -18,8 +18,8 @@ $_docTitle = isset($pageTitle)
 <?php if (!empty($pageDescription)): ?>
 <meta name="description" content="<?php echo e($pageDescription); ?>">
 <?php endif; ?>
-<link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="<?php echo getFaviconSrc($site, '64'); ?>">
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo getFaviconSrc($site, '32'); ?>">
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -67,17 +67,19 @@ $_docTitle = isset($pageTitle)
       </a>
       <ul class="nav-links">
         <li class="nav-item"><a href="index.php" class="nav-link<?php echo ($pageFile === 'index.php') ? ' active' : ''; ?>">Home</a></li>
-        <?php foreach ($navData['pages'] as $page):
-            if (($page['slug'] ?? '') === 'index') continue;
-            $pFile   = $page['file'];
-            $pLabel  = e($page['label']);
+        <?php foreach ($navData['pages'] as $navPage):
+            if (($navPage['slug'] ?? '') === 'index') continue;
+            if (!($navPage['builtin'] ?? true) && ($navPage['show_in_nav'] ?? true) === false) continue;
+            if (!($navPage['builtin'] ?? true) && ($navPage['status'] ?? 'active') !== 'active') continue;
+            $pFile   = $navPage['file'];
+            $pLabel  = e($navPage['label']);
             $pActive = ($pFile === $pageFile) ? ' active' : '';
-            if (!empty($page['dropdown'])): ?>
+            if (!empty($navPage['dropdown'])): ?>
         <li class="nav-item">
           <a href="<?php echo e($pFile); ?>" class="nav-link<?php echo $pActive; ?>"><?php echo $pLabel; ?> <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></a>
           <div class="dropdown">
             <a href="<?php echo e($pFile); ?>" class="dropdown-link"><?php echo $pLabel; ?></a>
-            <?php foreach ($page['dropdown'] as $child): ?>
+            <?php foreach ($navPage['dropdown'] as $child): ?>
             <a href="<?php echo e($child['file']); ?>" class="dropdown-link"><?php echo e($child['label']); ?></a>
             <?php endforeach; ?>
           </div>
@@ -96,16 +98,18 @@ $_docTitle = isset($pageTitle)
   <button class="mobile-nav-close" aria-label="Close menu">&times;</button>
   <ul class="mobile-nav-links">
     <li><a href="index.php" class="mobile-nav-link">Home</a></li>
-    <?php foreach ($navData['pages'] as $page):
-        if (($page['slug'] ?? '') === 'index') continue;
-        $pFile  = $page['file'];
-        $pLabel = e($page['label']);
-        if (!empty($page['dropdown'])): ?>
+    <?php foreach ($navData['pages'] as $navPage):
+        if (($navPage['slug'] ?? '') === 'index') continue;
+        if (!($navPage['builtin'] ?? true) && ($navPage['show_in_nav'] ?? true) === false) continue;
+        if (!($navPage['builtin'] ?? true) && ($navPage['status'] ?? 'active') !== 'active') continue;
+        $pFile  = $navPage['file'];
+        $pLabel = e($navPage['label']);
+        if (!empty($navPage['dropdown'])): ?>
     <li class="mobile-has-dropdown">
       <a href="<?php echo e($pFile); ?>" class="mobile-nav-link"><?php echo $pLabel; ?></a>
       <div class="mobile-dropdown">
         <a href="<?php echo e($pFile); ?>" class="mobile-dropdown-link"><?php echo $pLabel; ?></a>
-        <?php foreach ($page['dropdown'] as $child): ?>
+        <?php foreach ($navPage['dropdown'] as $child): ?>
         <a href="<?php echo e($child['file']); ?>" class="mobile-dropdown-link"><?php echo e($child['label']); ?></a>
         <?php endforeach; ?>
       </div>

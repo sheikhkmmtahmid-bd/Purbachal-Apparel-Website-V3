@@ -1,24 +1,111 @@
 {
   "title": "Sustainability | Purbachal Apparel Limited",
-  "meta_desc": "Purbachal Apparel Limited's commitment to sustainability: solar energy, ethical manufacturing, worker welfare, and environmental responsibility.",
-  "hero_title": "Our Commitment to Sustainability",
-  "hero_desc": "At Purbachal Apparel, sustainability is not an afterthought — it is woven into the fabric of everything we do.",
-  "pillars": [
-    {"title":"Environmental Responsibility","text":"We are investing in renewable energy, targeting 300 KW of solar capacity, reducing water consumption, and minimizing waste across all operations.","icon":"leaf"},
-    {"title":"Social Compliance","text":"Fair wages, safe working conditions, and zero tolerance for forced labor. Over 60% of our workforce are women, supported by welfare programs and continuous training.","icon":"people"},
-    {"title":"Ethical Governance","text":"Transparent supply chains, third-party audits, and strict compliance with international standards ensure we operate with the highest integrity.","icon":"shield"}
+  "meta_desc": "Sustainability at Purbachal Apparel Limited: environmental initiatives, social responsibility, CSR programmes, and our commitment to ethical manufacturing in Bangladesh.",
+
+  "hero_title": "Sustainability at PAL",
+  "hero_desc": "We are committed to building a manufacturing business that is good for the planet, good for our people, and good for the communities in which we operate.",
+  "hero_bg_image": "sustain-hero.png",
+
+  "pillars_eyebrow": "Our Approach",
+  "pillars_heading": "Three Pillars of Sustainability",
+  "pillars_desc": "Our sustainability strategy addresses environmental impact, social responsibility, and long-term economic viability in equal measure.",
+  "pillar_items": [
+    {
+      "icon": "leaf",
+      "mod": "pillar-card-env",
+      "title": "Environmental",
+      "text": "We actively reduce our environmental footprint through solar energy, rainwater harvesting, waste reduction, eco-friendly production processes, and a commitment to achieving ISO 14001 standards across all our operations."
+    },
+    {
+      "icon": "users",
+      "mod": "pillar-card-soc",
+      "title": "Social",
+      "text": "Our social commitment extends beyond the factory floor. We invest in our workers' well-being through fair wages, healthcare programmes, gender equality initiatives, safe working conditions, and community development activities."
+    },
+    {
+      "icon": "trending",
+      "mod": "pillar-card-eco",
+      "title": "Economic",
+      "text": "Sustainable business is built on long-term thinking. We pursue responsible growth that creates dignified employment, generates value for our clients and stakeholders, and strengthens Bangladesh's position in the global apparel supply chain."
+    }
   ],
-  "initiatives": [
-    {"title":"Solar Energy Transition","text":"Working toward 300 KW solar energy capacity to reduce our carbon footprint."},
-    {"title":"Water Conservation","text":"Implementing water recycling systems to minimize consumption in production."},
-    {"title":"Waste Reduction","text":"Fabric waste reduction programs and recycling initiatives across all departments."},
-    {"title":"Worker Welfare","text":"Health check-ups, childcare support, and financial literacy programs for all workers."},
-    {"title":"Fair Trade Practices","text":"Ensuring fair wages above minimum wage and transparent working hours."},
-    {"title":"Community Investment","text":"Supporting local schools, healthcare facilities, and skill development centers."}
+
+  "initiatives_eyebrow": "What We Do",
+  "initiatives_heading": "Our Sustainability Initiatives",
+  "initiatives_desc": "From renewable energy to eco-friendly production, every initiative at PAL is designed to make a measurable, lasting difference.",
+  "initiative_items": [
+    {
+      "icon": "tree",
+      "color": "icon-green",
+      "title": "Tree Plantation",
+      "text": "We run an active tree plantation programme within and around our factory premises, contributing to local biodiversity, carbon capture, and a greener environment for our surrounding community."
+    },
+    {
+      "icon": "sun",
+      "color": "icon-amber",
+      "title": "Solar Energy: 300 KW Target",
+      "text": "We are investing in a rooftop solar power installation with a target capacity of 300 KW, significantly reducing our reliance on grid electricity and cutting our carbon emissions per unit of production."
+    },
+    {
+      "icon": "droplet",
+      "color": "icon-blue",
+      "title": "Rainwater Harvesting",
+      "text": "Our rainwater harvesting system collects and treats rainwater for use in industrial processes, reducing our freshwater consumption and minimizing our impact on local water resources."
+    },
+    {
+      "icon": "plant",
+      "color": "icon-teal",
+      "title": "Eco-Friendly Production",
+      "text": "We prioritize low-impact materials, responsible chemical management, and energy-efficient machinery across our production lines, meeting or exceeding the requirements of GOTS, OCS, and OEKO-TEX Standard 100."
+    },
+    {
+      "icon": "shield-check",
+      "color": "icon-green",
+      "title": "Full Compliance & Auditing",
+      "text": "We maintain 12 active international certifications and welcome regular third-party audits to verify that our social and environmental commitments are genuinely upheld, not merely stated on paper."
+    },
+    {
+      "icon": "refresh",
+      "color": "icon-amber",
+      "title": "Waste Management",
+      "text": "Systematic waste segregation, fabric offcut recycling, and responsible disposal practices ensure that our factory operations generate minimal landfill waste and maximum material efficiency."
+    }
   ],
-  "csr": [
-    {"title":"Health & Safety","text":"State-of-the-art safety equipment and regular drills for all 2,000+ workers.","image":"csr-01.jpg"},
-    {"title":"Education Support","text":"Funding education programs for workers' children and local community youth.","image":"csr-02.jpg"},
-    {"title":"Green Manufacturing","text":"ISO 14001 certified environmental management system across all facilities.","image":"csr-03.jpg"}
-  ]
+
+  "csr_eyebrow": "Corporate Social Responsibility",
+  "csr_heading": "Our CSR Programme",
+  "csr_desc": "Our CSR programme addresses the needs of our workers and the broader community, from healthcare and education to safety training and emergency support.",
+  "csr_items": [
+    {
+      "image": "csr-01.jpg",
+      "alt": "Healthcare programme at Purbachal Apparel",
+      "title": "Healthcare for Workers",
+      "desc": "We provide free on-site medical services, health awareness sessions, and maternity support to our entire workforce, ensuring access to essential healthcare regardless of economic status."
+    },
+    {
+      "image": "csr-02.jpg",
+      "alt": "Employee welfare activities",
+      "title": "Employee Welfare Activities",
+      "desc": "Regular cultural events, recreational activities, and skills development workshops foster team spirit, improve morale, and enhance the overall well-being of our diverse workforce."
+    },
+    {
+      "image": "csr-03.jpg",
+      "alt": "Fire and safety training",
+      "title": "Fire & Safety Training",
+      "desc": "Comprehensive fire safety drills, first aid training, and workplace hazard awareness programmes are conducted regularly to ensure the safety of every person in our facility."
+    },
+    {
+      "image": "csr-04.jpg",
+      "alt": "Community engagement",
+      "title": "Community Engagement",
+      "desc": "We partner with local schools, health clinics, and community organizations in Gazipur to support education, public health awareness, and emergency relief in the region."
+    }
+  ],
+
+  "cta_title": "Partner With a Responsible Manufacturer",
+  "cta_desc": "Our sustainability credentials, certified practices, and transparent operations make PAL the right choice for brands that care about their supply chain.",
+  "cta_btn1_text": "Contact Us",
+  "cta_btn1_link": "contact.php",
+  "cta_btn2_text": "Our Certifications",
+  "cta_btn2_link": "certificates.php"
 }

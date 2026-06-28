@@ -1,9 +1,10 @@
 {
   "title": "Home | Purbachal Apparel Limited",
   "meta_desc": "Purbachal Apparel Limited: Leading woven garment manufacturers and 100% exporters from Bangladesh. OEKO-TEX, SEDEX, GOTS, WRAP certified.",
+
   "hero_badge": "Established 2012 · Manufacturing Since 2017",
   "hero_title": "Ethical.<br><span>Efficient.<\/span><br>Exceptional.",
-  "hero_subtitle": "Purbachal Apparel Limited is a leading woven garment manufacturer and 100% exporter from Bangladesh, delivering premium quality apparel to retailers across Europe and beyond.",
+  "hero_desc": "Purbachal Apparel Limited is a leading woven garment manufacturer and 100% exporter from Bangladesh, delivering premium quality apparel to retailers across Europe and beyond.",
   "hero_cta1_text": "Contact Us",
   "hero_cta1_link": "contact.php",
   "hero_cta2_text": "View Our Products",
@@ -12,13 +13,35 @@
   "hero_card1_desc": "Dedicated team ensuring quality at every stage of production",
   "hero_card2_title": "Global Export Reach",
   "hero_card2_desc": "Serving leading retailers across Europe and international markets",
-  "services": [
-    {"number":"01","title":"We Design Garments","desc":"From woven tops to lightweight bottoms, nightwear, and kidswear; every style is crafted for global fashion demands with innovation and quality at the core."},
-    {"number":"02","title":"We Manufacture","desc":"With 20 modern production lines and a monthly capacity of 750,000 pieces, our 2,000+ skilled team ensures on-time delivery while maintaining the highest ethical and sustainable standards."},
-    {"number":"03","title":"We Export Globally","desc":"PAL proudly serves leading international retailers worldwide, with an annual turnover of USD 32 million, building long-term partnerships through quality, compliance, and competitive pricing."}
+
+  "marquee_label": "Trusted by Leading Global Retailers",
+  "marquee_items": [
+    {"image": "client-eleclerc.png",       "alt": "E.Leclerc / Siplec"},
+    {"image": "client-lcwaikiki.png",      "alt": "LC Waikiki"},
+    {"image": "client-lolaliza.png",       "alt": "Lolaliza"},
+    {"image": "client-newlook.png",        "alt": "New Look"},
+    {"image": "client-tendam.png",         "alt": "Tendam"},
+    {"image": "client-zxy.png",            "alt": "ZXY"},
+    {"image": "client-cortefiel.png",      "alt": "Cortefiel"},
+    {"image": "client-premier.png",        "alt": "Premier"},
+    {"image": "client-mango.png",          "alt": "Mango"},
+    {"image": "client-gemo.png",           "alt": "GEMO"},
+    {"image": "client-authenticstyle.png", "alt": "Authentic Style"},
+    {"image": "client-ragno.png",          "alt": "Ragno"}
   ],
-  "about_title": "A Trusted Manufacturer Since 2012",
-  "about_para1": "Purbachal Apparel Limited (PAL) is a 100% export-oriented woven garment manufacturer established in 2012 and operational since 2017. Located in Gazipur, Bangladesh, we specialize in producing high-quality woven tops, bottoms, nightwear, kidswear, and swimwear for leading European and global retailers.",
+
+  "cards_eyebrow": "What We Do",
+  "cards_heading": "From Design to Global Delivery",
+  "cards_desc": "We handle every step of the supply chain, from initial concept and sampling through to quality-controlled manufacturing and on-time global export.",
+  "cards_items": [
+    {"number": "01", "icon": "scissors", "title": "We Design Garments",  "text": "From woven tops to lightweight bottoms, nightwear, and kidswear; every style is crafted for global fashion demands with innovation and quality at the core."},
+    {"number": "02", "icon": "gear",     "title": "We Manufacture",      "text": "With 20 modern production lines and a monthly capacity of 750,000 pieces, our 2,000+ skilled team ensures on-time delivery while maintaining the highest ethical and sustainable standards."},
+    {"number": "03", "icon": "globe",    "title": "We Export Globally",  "text": "PAL proudly serves leading international retailers worldwide, with an annual turnover of USD 32 million, building long-term partnerships through quality, compliance, and competitive pricing."}
+  ],
+
+  "about_eyebrow": "Who We Are",
+  "about_heading": "A Trusted Manufacturer Since 2012",
+  "about_body": "Purbachal Apparel Limited (PAL) is a 100% export-oriented woven garment manufacturer established in 2012 and operational since 2017. Located in Gazipur, Bangladesh, we specialize in producing high-quality woven tops, bottoms, nightwear, kidswear, and swimwear for leading European and global retailers.",
   "about_checklist": [
     "20+ modern production lines with a monthly capacity of 750,000 pieces",
     "100% export-oriented with an annual turnover of USD 32 million",
@@ -26,11 +49,56 @@
     "Over 60% female workforce with a strong focus on worker welfare",
     "Committed to environmental sustainability with a 300 KW solar energy target"
   ],
-  "process": [
-    {"number":"01","title":"Product Development & Sampling","desc":"We collaborate closely with clients to develop styles, select fabrics, and produce accurate samples, ensuring alignment with market expectations before bulk production begins."},
-    {"number":"02","title":"Quality Control & Compliance","desc":"Our dedicated quality assurance team conducts multi-stage inspections throughout production to maintain international quality standards and regulatory compliance."},
-    {"number":"03","title":"Global Delivery & Client Support","desc":"We ensure on-time delivery to global destinations with full documentation support, backed by a responsive client service team dedicated to long-term partnerships."}
+  "about_cta_text": "Learn More",
+  "about_cta_link": "about.php",
+  "about_cta2_text": "Get a Quote",
+  "about_cta2_link": "contact.php",
+  "about_image": "about-factory.png",
+  "about_image_alt": "Purbachal Apparel factory floor with workers",
+  "about_inset_image": "about-sewing.jpg",
+  "about_inset_alt": "JUKI sewing machine close-up",
+  "about_badge_value": "2,000+",
+  "about_badge_label": "Skilled Workers",
+
+  "process_eyebrow": "Our Process",
+  "process_heading": "Three Steps to Quality Garments",
+  "process_desc": "From the first sketch to the final shipment, we follow a rigorous process that guarantees quality and compliance at every stage.",
+  "process_items": [
+    {"number": "01", "title": "Product Development & Sampling",   "desc": "We collaborate closely with clients to develop styles, select fabrics, and produce accurate samples, ensuring alignment with market expectations before bulk production begins."},
+    {"number": "02", "title": "Quality Control & Compliance",     "desc": "Our dedicated quality assurance team conducts multi-stage inspections throughout production to maintain international quality standards and regulatory compliance."},
+    {"number": "03", "title": "Global Delivery & Client Support", "desc": "We ensure on-time delivery to global destinations with full documentation support, backed by a responsive client service team dedicated to long-term partnerships."}
   ],
+
+  "certs_eyebrow": "Our Certifications",
+  "certs_heading": "Internationally Certified & Compliant",
+  "certs_desc": "We hold 12 internationally recognized certifications, ensuring that our production processes meet the highest ethical, environmental, and quality standards.",
+  "certs_link_text": "View All Certifications",
+  "certs_link": "certificates.php",
+  "certs_items": [
+    {"image": "cert-rsc.png",           "label": "RSC"},
+    {"image": "cert-bsci.png",          "label": "Amfori / BSCI"},
+    {"image": "cert-sedex.png",         "label": "SEDEX"},
+    {"image": "cert-wrap.png",          "label": "WRAP"},
+    {"image": "cert-higg.png",          "label": "Higg Index"},
+    {"image": "cert-iso14001.png",      "label": "ISO 14001"},
+    {"image": "cert-gots.png",          "label": "GOTS"},
+    {"image": "cert-ocs.png",           "label": "OCS"},
+    {"image": "cert-rcs.png",           "label": "RCS"},
+    {"image": "cert-oeko.png",          "label": "OEKO-TEX 100"},
+    {"image": "cert-ecovadis.png",      "label": "EcoVadis"},
+    {"image": "cert-cotton-africa.png", "label": "Cotton Made in Africa"}
+  ],
+
   "cta_title": "Ready to Source From Bangladesh?",
-  "cta_desc": "Partner with a manufacturer that delivers quality, compliance, and on-time shipping to global markets."
+  "cta_desc": "Partner with a manufacturer that delivers quality, compliance, and on-time shipping to global markets.",
+  "cta_btn1_text": "Contact Us",
+  "cta_btn1_link": "contact.php",
+  "cta_btn2_text": "Get a Quote",
+  "cta_btn2_link": "contact.php",
+
+  "craft_heading": "Crafting Quality,<br>Delivering Trust",
+  "craft_cta_text": "Contact Us Today",
+  "craft_cta_link": "contact.php",
+  "craft_image": "banner-worker.jpg",
+  "craft_image_alt": "Skilled worker at sewing machine at Purbachal Apparel"
 }

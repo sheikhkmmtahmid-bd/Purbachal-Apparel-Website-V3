@@ -130,26 +130,32 @@ function validateAndProcessUpload(array $file, string $destDir): array {
     if (!in_array($ext, ALLOWED_MIMES[$mime], true)) {
         return ['ok' => false, 'error' => 'Extension mismatch'];
     }
-    $img = @imagecreatefromstring(file_get_contents($file['tmp_name']));
-    if (!$img) {
-        return ['ok' => false, 'error' => 'Cannot process image'];
-    }
     $ext      = ($ext === 'jpeg') ? 'jpg' : $ext;
     $filename = bin2hex(random_bytes(16)) . '.' . $ext;
     if (!is_dir($destDir)) {
         mkdir($destDir, 0755, true);
     }
     $dest = rtrim($destDir, '/') . '/' . $filename;
-    $ok   = match ($ext) {
-        'jpg'  => imagejpeg($img, $dest, 90),
-        'png'  => imagepng($img, $dest, 6),
-        'gif'  => imagegif($img, $dest),
-        'webp' => imagewebp($img, $dest, 90),
-        default => false,
-    };
-    imagedestroy($img);
-    if (!$ok) {
-        return ['ok' => false, 'error' => 'Failed to save image'];
+    if (function_exists('imagecreatefromstring')) {
+        $img = @imagecreatefromstring(file_get_contents($file['tmp_name']));
+        if (!$img) {
+            return ['ok' => false, 'error' => 'Cannot process image'];
+        }
+        $ok = match ($ext) {
+            'jpg'  => imagejpeg($img, $dest, 90),
+            'png'  => imagepng($img, $dest, 6),
+            'gif'  => imagegif($img, $dest),
+            'webp' => imagewebp($img, $dest, 90),
+            default => false,
+        };
+        unset($img);
+        if (!$ok) {
+            return ['ok' => false, 'error' => 'Failed to save image'];
+        }
+    } else {
+        if (!move_uploaded_file($file['tmp_name'], $dest)) {
+            return ['ok' => false, 'error' => 'Failed to save image'];
+        }
     }
     return ['ok' => true, 'filename' => $filename];
 }

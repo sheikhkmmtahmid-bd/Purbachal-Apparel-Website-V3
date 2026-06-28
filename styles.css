@@ -196,7 +196,8 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-head); line-height: 1.2; color: var(
 /* 6. PAGE HERO (inner pages) */
 .page-hero { background: linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 50%,#0a3a42 100%); color: var(--white); padding: 80px 0 72px; position: relative; overflow: hidden; }
 .page-hero::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2313A3AE' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); pointer-events: none; }
-.page-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg,var(--teal),var(--magenta),var(--amber),var(--green)); }
+.page-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg,var(--teal),var(--magenta),var(--amber),var(--green),var(--blue),var(--teal)); background-size: 300% 100%; animation: heroBarShift 8s ease-in-out infinite alternate; }
+@keyframes heroBarShift { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }
 .page-hero-content { position: relative; z-index: 1; }
 .page-hero h1 { font-size: clamp(2rem,4vw,3.25rem); font-weight: 900; color: var(--white); margin-bottom: 16px; }
 .page-hero p { font-size: 1.125rem; color: rgba(255,255,255,.75); max-width: 600px; }
@@ -491,6 +492,9 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-head); line-height: 1.2; color: var(
 .fab-top { background: var(--teal); color: var(--white); opacity: 0; visibility: hidden; transform: scale(0.8); transition: opacity .3s, visibility .3s, transform .3s; }
 .fab-top.show { opacity: 1; visibility: visible; transform: scale(1); }
 .fab-top:hover { background: var(--teal-light); transform: scale(1.12); }
+.fab-admin { width: 36px; height: 36px; background: var(--teal); color: #fff; margin-top: 16px; opacity: 0; visibility: hidden; transform: scale(0.8); transition: opacity .3s, visibility .3s, transform .3s; }
+.fab-admin.show { opacity: 1; visibility: visible; transform: scale(1); }
+.fab-admin:hover { background: var(--teal-light); transform: scale(1.12); }
 
 /* 23. ABOUT PAGE SPECIFICS */
 .company-overview-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 60px; align-items: start; }

@@ -1,17 +1,49 @@
 {
   "title": "Our Team | Purbachal Apparel Limited",
-  "meta_desc": "Meet the leadership team at Purbachal Apparel Limited: our board of directors and the skilled professionals driving our global success.",
+  "meta_desc": "Meet the leadership team at Purbachal Apparel Limited: our Managing Director and Chairman who guide our mission of ethical, quality manufacturing.",
+
   "hero_title": "Our Leadership Team",
-  "hero_desc": "Meet the visionary leaders and dedicated professionals who drive Purbachal Apparel's mission of quality, sustainability, and global excellence.",
-  "directors": [
-    {"name":"Md. Masud Rana","role":"Managing Director","photo":"director-masud-official.png","quote":"We built Purbachal Apparel on the belief that ethical manufacturing and business excellence are not opposing forces — they are the same force."},
-    {"name":"Md. Naim Hossain","role":"Director","photo":"director-naim-official.png","quote":"Every garment we produce is a commitment — to our clients, to our workers, and to the future of sustainable fashion."}
+  "hero_desc": "The vision and values of Purbachal Apparel Limited are shaped by experienced leaders who are passionate about quality, compliance, and sustainable garment manufacturing.",
+
+  "directors_eyebrow": "The People Behind PAL",
+  "directors_heading": "Board of Directors",
+  "directors_desc": "Our founding directors bring decades of combined experience in garment manufacturing, international trade, and sustainable business development.",
+  "directors_items": [
+    {
+      "name": "Md. Masud Hossain",
+      "role": "Managing Director",
+      "photo": "Masud.png",
+      "photo_position": "center 25%",
+      "quote": "Our commitment is not just to deliver garments, but to build lasting partnerships based on trust, transparency, and consistent quality. Ethical manufacturing is the foundation of sustainable growth."
+    },
+    {
+      "name": "Md. Naimul Alam",
+      "role": "Chairman",
+      "photo": "Naim.png",
+      "photo_position": "center 40%",
+      "quote": "Since our inception, we have invested in people, processes, and technology to create a factory that we are proud of. Every garment leaving our facility represents the very best of Bangladeshi manufacturing."
+    }
   ],
-  "stats": [
-    {"value":"2,000+","label":"Skilled Workers"},
-    {"value":"60%+","label":"Female Workforce"},
-    {"value":"20+","label":"Production Lines"},
-    {"value":"14+","label":"Years Experience"}
+
+  "stats_items": [
+    {"value": "2,000+", "label": "Total Employees"},
+    {"value": "60%+",   "label": "Female Workforce"},
+    {"value": "20+",    "label": "Production Lines"},
+    {"value": "750K+",  "label": "Pieces per Month"}
   ],
-  "gallery": []
+
+  "gallery_eyebrow": "Inside Purbachal Apparel",
+  "gallery_heading": "Our Facility & People",
+  "gallery_items": [
+    {"filename": "welldesign-hero.png", "alt": "Design Studio, Purbachal Apparel"},
+    {"filename": "home-we-design.png",  "alt": "Design and Production, Purbachal Apparel"},
+    {"filename": "about-new1.png",      "alt": "Purbachal Apparel Facility"}
+  ],
+
+  "cta_title": "Want to Work With Our Team?",
+  "cta_desc": "Reach out to discuss your sourcing needs and discover how Purbachal Apparel can become your trusted manufacturing partner.",
+  "cta_btn1_text": "Contact Us",
+  "cta_btn1_link": "contact.php",
+  "cta_btn2_text": "Get a Quote",
+  "cta_btn2_link": "contact.php"
 }

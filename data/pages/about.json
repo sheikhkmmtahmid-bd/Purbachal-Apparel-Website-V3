@@ -1,33 +1,84 @@
 {
   "title": "About Us | Purbachal Apparel Limited",
   "meta_desc": "Learn about Purbachal Apparel Limited: our history, board of directors, mission, and commitment to quality and sustainability since 2012.",
+
   "hero_title": "About Purbachal Apparel Limited",
   "hero_desc": "A leading woven garment manufacturer and 100% exporter from Bangladesh, committed to quality, compliance, and sustainable practices since 2012.",
-  "company_table": [
-    {"label":"Company Name","value":"Purbachal Apparel Limited"},
-    {"label":"Year Established","value":"2012"},
-    {"label":"Year of Operation","value":"2017"},
-    {"label":"Type of Business","value":"100% Export-Oriented Woven Garment Manufacturer"},
-    {"label":"BGMEA Membership","value":"No. 6356"},
-    {"label":"ERC No.","value":"BA 26032610788220"},
-    {"label":"Monthly Capacity","value":"750,000 Pieces"},
-    {"label":"Production Lines","value":"20+ Modern Lines"},
-    {"label":"Total Workforce","value":"2,000+ Skilled Workers"},
-    {"label":"Annual Turnover","value":"USD 32 Million"}
+
+  "overview_left_eyebrow": "Company Profile",
+  "overview_left_heading": "At a Glance",
+  "overview_table_rows": [
+    {"label": "Legal Status",              "value": "Private Limited Company"},
+    {"label": "Types of Garments",         "value": "Woven Tops, Lightweight Bottoms, Nightwear, Kidswear"},
+    {"label": "Monthly Capacity",          "value": "750,000 pcs / month"},
+    {"label": "Production Lines",          "value": "20 Lines (50 machines per line)"},
+    {"label": "Annual Turnover",           "value": "USD 32 Million"},
+    {"label": "Total Manpower",            "value": "2,000 (Female: 60%, Male: 40%)"},
+    {"label": "Factory Land Area",         "value": "117,406 sq ft"},
+    {"label": "BGMEA Registration",        "value": "No. 6356"},
+    {"label": "Export Registration (ERC)", "value": "BA 26032610788220"},
+    {"label": "Location",                  "value": "South Panjora, Nagori, Kaliganj, Gazipur-1720"}
   ],
-  "directors": [
-    {"name":"Md. Masud Rana","role":"Managing Director","quote":"We built Purbachal Apparel on the belief that ethical manufacturing and business excellence are not opposing forces — they are the same force.","photo":"director-masud-official.png","phone":"+880 1713 001008","email":"masud@purbachalapparel.com"},
-    {"name":"Md. Naim Hossain","role":"Director","quote":"Every garment we produce is a commitment — to our clients, to our workers, and to the future of sustainable fashion.","photo":"director-naim-official.png","phone":"+880 1713 001008","email":"naim@purbachalapparel.com"}
+
+  "overview_right_eyebrow": "Our Story",
+  "overview_right_heading": "Built on Quality & Trust",
+  "overview_right_body": "Purbachal Apparel Limited (PAL) was founded in 2012 with a clear vision: to become a world-class woven garment manufacturer from Bangladesh. Since commencing production operations in 2017, we have grown into a respected 100% export-oriented manufacturer, serving some of Europe's most recognised fashion and retail brands.\n\nOur state-of-the-art facility in Gazipur is equipped with more than 20 modern production lines and staffed by a dedicated workforce of over 2,000 skilled employees, of whom more than 60% are women. We are deeply committed to ethical manufacturing, environmental sustainability, and the well-being of our workers and the communities in which we operate.\n\nWith an annual turnover of USD 32 million and 12 international certifications, including OEKO-TEX Standard 100, GOTS, SEDEX, and WRAP; PAL stands as a benchmark of quality, compliance, and reliability in the global garment supply chain.",
+
+  "directors_eyebrow": "Leadership",
+  "directors_heading": "Board of Directors",
+  "directors_desc": "Our leadership team brings decades of combined experience in garment manufacturing, export management, and sustainable business practices.",
+  "directors_items": [
+    {
+      "name": "Md. Masud Hossain",
+      "role": "Managing Director",
+      "photo": "Masud.png",
+      "photo_position": "center 25%",
+      "quote": "Purbachal Apparel was built on a foundation of trust, quality, and ethical manufacturing. Every garment we produce is a reflection of our commitment to our clients and our community. We do not just manufacture apparel; we build lasting partnerships.",
+      "phone": "+880 1713 001008",
+      "email": "masud@purbachalapparel.com"
+    },
+    {
+      "name": "Md. Naimul Alam",
+      "role": "Chairman",
+      "photo": "Naim.png",
+      "photo_position": "center 40%",
+      "quote": "Our vision has always been to create a world-class apparel enterprise from Bangladesh. We invest not only in machinery and processes but in our people, ensuring every worker is treated with dignity, fairly compensated, and supported in their growth.",
+      "phone": "+880 1713 006260",
+      "email": "naim@purbachalapparel.com"
+    }
   ],
-  "mission": [
-    {"title":"Our Mission","text":"To deliver world-class woven garments through innovative design, ethical manufacturing, and sustainable practices that create lasting value for our global retail partners."},
-    {"title":"Our Vision","text":"To become Bangladesh's most trusted and sustainable garment manufacturer, recognized globally for quality, compliance, and positive social impact."},
-    {"title":"Our Values","text":"Integrity, Quality, Sustainability, and Partnership — these four pillars guide every decision we make, from the factory floor to the boardroom."}
+
+  "mission_eyebrow": "Our Purpose",
+  "mission_heading": "Mission, Vision & Business Motive",
+  "mission_items": [
+    {"icon": "compass", "title": "Our Mission",         "text": "To contribute to the nation's prosperity by ensuring employment, healthcare facilities, and reducing greenhouse emissions, while delivering world-class woven garments to our global clients with utmost diligence."},
+    {"icon": "eye",     "title": "Our Vision",          "text": "To create a team of motivated employees who share our purpose: to support our nation's economy and provide consistently high-quality goods to our valued clients worldwide."},
+    {"icon": "star",    "title": "Our Business Motive", "text": "We believe in Quality. Our core business motive is to achieve 100% customer satisfaction by producing qualitative products that meet and exceed international standards and client expectations."}
   ],
-  "culture": [
-    {"title":"Worker Welfare","text":"Over 60% of our workforce are women. We provide fair wages, safe working conditions, health facilities, and continuous skill development programs."},
-    {"title":"Environmental Commitment","text":"We are transitioning to renewable energy, targeting 300 KW of solar capacity, and continuously reducing our water and carbon footprint."},
-    {"title":"Quality Assurance","text":"Our multi-stage quality control process, backed by international certifications, ensures every piece meets the highest standards before shipment."},
-    {"title":"Community Impact","text":"We invest in the local community through education support, healthcare access, and employment opportunities for local residents."}
+
+  "welfare_eyebrow": "People & Planet",
+  "welfare_heading": "Worker Welfare & Sustainability",
+  "welfare_desc": "Beyond production, we focus on our people and the planet, embedding social responsibility and environmental stewardship into every aspect of our operations.",
+  "welfare_items": [
+    {"value": "60%+",   "label": "Female Workforce"},
+    {"value": "100%",   "label": "Ethical Compliance"},
+    {"value": "300 KW", "label": "Solar Energy Target"}
+  ],
+
+  "culture_eyebrow": "Inside PAL",
+  "culture_heading": "Industries & Culture",
+  "culture_items": [
+    {"icon": "map",      "title": "Our Journey", "text": "From a focused start in 2017 to a globally recognized manufacturer, our journey is defined by perseverance, investment in quality, and continuous improvement."},
+    {"icon": "users",    "title": "Our People",  "text": "Our 2,000+ workforce is the heart of PAL. We invest in skills training, fair wages, healthcare support, and a safe working environment for every employee."},
+    {"icon": "values",   "title": "Our Values",  "text": "Integrity, transparency, quality, and sustainability are not just words at PAL; they guide every decision we make, from the factory floor to the boardroom."},
+    {"icon": "trending", "title": "Our Future",  "text": "We are committed to expanding our capacity, deepening our sustainability initiatives, and growing our global client base while maintaining the quality and ethics that define us."}
+  ],
+
+  "perf_eyebrow": "Performance",
+  "perf_heading": "Our Commitment in Numbers",
+  "perf_items": [
+    {"label": "Quality Assurance",         "percent": "95"},
+    {"label": "Worker Welfare",            "percent": "90"},
+    {"label": "Sustainability Initiatives","percent": "85"}
   ]
 }

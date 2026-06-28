@@ -1,20 +1,57 @@
 {
   "title": "Our Clients | Purbachal Apparel Limited",
   "meta_desc": "Purbachal Apparel Limited serves leading global retailers including E.Leclerc, LC Waikiki, Mango, New Look, and more from Bangladesh.",
-  "hero_title": "Our Valued Clients",
-  "hero_desc": "We are proud to partner with some of the world's leading fashion retailers, delivering quality woven garments on time and to specification.",
-  "clients": [
-    {"name":"E.Leclerc / Siplec","logo":"client-eleclerc.png","country":"France"},
-    {"name":"LC Waikiki","logo":"client-lcwaikiki.png","country":"Turkey"},
-    {"name":"Lolaliza","logo":"client-lolaliza.png","country":"Belgium"},
-    {"name":"New Look","logo":"client-newlook.png","country":"UK"},
-    {"name":"Tendam","logo":"client-tendam.png","country":"Spain"},
-    {"name":"ZXY","logo":"client-zxy.png","country":"International"},
-    {"name":"Cortefiel","logo":"client-cortefiel.png","country":"Spain"},
-    {"name":"Premier","logo":"client-premier.png","country":"International"},
-    {"name":"Mango","logo":"client-mango.png","country":"Spain"},
-    {"name":"GEMO","logo":"client-gemo.png","country":"France"},
-    {"name":"Authentic Style","logo":"client-authenticstyle.png","country":"International"},
-    {"name":"Ragno","logo":"client-ragno.png","country":"Italy"}
-  ]
+
+  "hero_title": "Our Global Clients",
+  "hero_desc": "We are proud to partner with some of the world's most recognized fashion and retail brands, delivering quality woven garments that meet their exacting standards.",
+
+  "logos_eyebrow": "Our Partners",
+  "logos_heading": "Trusted by Leading Global Retailers",
+  "logos_desc": "From Europe to Asia, Purbachal Apparel Limited is the preferred manufacturing partner for renowned international brands that demand quality, compliance, and reliability.",
+  "client_items": [
+    {"name": "E.Leclerc / Siplec",  "logo": "client-eleclerc.png",       "country": "🇫🇷 France"},
+    {"name": "LC Waikiki",           "logo": "client-lcwaikiki.png",      "country": "🇹🇷 Turkey / Europe"},
+    {"name": "Lolaliza",             "logo": "client-lolaliza.png",       "country": "🇧🇪 Belgium"},
+    {"name": "New Look",             "logo": "client-newlook.png",        "country": "🇬🇧 United Kingdom"},
+    {"name": "Tendam",               "logo": "client-tendam.png",         "country": "🇪🇸 Spain"},
+    {"name": "ZXY",                  "logo": "client-zxy.png",            "country": "🇦🇪 United Arab Emirates"},
+    {"name": "Cortefiel",            "logo": "client-cortefiel.png",      "country": "🇪🇸 Spain"},
+    {"name": "Premier",              "logo": "client-premier.png",        "country": "🇬🇧 United Kingdom"},
+    {"name": "Mango",                "logo": "client-mango.png",          "country": "🇪🇸 Spain"},
+    {"name": "GEMO",                 "logo": "client-gemo.png",           "country": "🇫🇷 France"},
+    {"name": "Authentic Style",      "logo": "client-authenticstyle.png", "country": "🇩🇪 Germany"},
+    {"name": "Ragno",                "logo": "client-ragno.png",          "country": "🇮🇹 Italy"}
+  ],
+
+  "quotes_eyebrow": "A Word from Our Leaders",
+  "quotes_heading": "Our Commitment to Our Clients",
+  "director_items": [
+    {
+      "name": "Md. Masud Hossain",
+      "role": "Managing Director",
+      "photo": "Masud.png",
+      "photo_position": "center 25%",
+      "quote": "Every client relationship at PAL is built on a foundation of mutual respect and shared goals. We do not just manufacture garments; we invest in understanding our clients' markets, their customers, and their brand values. This is what makes our partnerships truly long-term."
+    },
+    {
+      "name": "Md. Naimul Alam",
+      "role": "Chairman",
+      "photo": "Naim.png",
+      "photo_position": "center 40%",
+      "quote": "The trust our global clients place in us is something we take very seriously. From initial sampling to final delivery, every process at PAL is designed to deliver exactly what our clients need: on time, to specification, and within their compliance requirements."
+    }
+  ],
+
+  "partnership_eyebrow": "Partnership in Action",
+  "partnership_heading": "Building Relationships That Last",
+  "partnership_desc": "Our client partnerships go beyond transactions; we work closely with each buyer to understand their needs and deliver results.",
+  "partnership_image": "director-md-full.png",
+  "partnership_image_alt": "Md. Masud Hossain, Managing Director, meeting with international buyers at Purbachal Apparel Limited",
+
+  "cta_title": "Ready to Join Our Client Family?",
+  "cta_desc": "Whether you are sourcing for the first time or looking to expand your supplier base, we welcome the opportunity to demonstrate the PAL difference.",
+  "cta_btn1_text": "Contact Us",
+  "cta_btn1_link": "contact.php",
+  "cta_btn2_text": "Request a Quote",
+  "cta_btn2_link": "contact.php"
 }

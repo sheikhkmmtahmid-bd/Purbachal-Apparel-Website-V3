@@ -1,9 +1,17 @@
 {
   "title": "Contact Us | Purbachal Apparel Limited",
   "meta_desc": "Get in touch with Purbachal Apparel Limited for sourcing inquiries, quotes, or partnership opportunities.",
-  "hero_title": "Get In Touch",
-  "hero_desc": "We would love to hear from you. Reach out to discuss your sourcing needs, request a quote, or arrange a factory visit.",
-  "emailjs_public_key": "mt429GxgF_853gm9a",
-  "emailjs_service_id": "service_l20zm0b",
-  "emailjs_template_id": "template_tjydd46"
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Get In Touch",
+      "desc": "We would love to hear from you. Reach out to discuss your sourcing needs, request a quote, or arrange a factory visit."
+    },
+    {
+      "type": "contact-form",
+      "emailjs_public_key": "mt429GxgF_853gm9a",
+      "emailjs_service_id": "service_l20zm0b",
+      "emailjs_template_id": "template_tjydd46"
+    }
+  ]
 }

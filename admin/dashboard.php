@@ -12,9 +12,9 @@ function countFiles(string $dir): int {
     return count(array_filter(scandir($dir), fn($f) => !in_array($f, ['.', '..']) && is_file($dir . DIRECTORY_SEPARATOR . $f)));
 }
 $stats = [
-  'pagessq_ => count(glob(DATA_DIR . 'pages/*.json')),
+  'pages'       => count(glob(DATA_DIR . 'pages/*.json')),
   'galleryimg'  => countFiles(UPLOAD_DIR . 'gallery/'),
-  'productsimg' => countFiles(UPLOAD_DIR . 'products/kids/') + countFiles(UPLOAD_DIR . 'products/mens/') + countFiles(UPLOAD_DIR . 'products/womens/'),
+  'productsimg' => countFiles(UPLOAD_DIR . 'products/'),
   'customdata'  => count(glob(DATA_DIR . 'custom/*.json')),
 ];
 ?>
@@ -45,7 +45,7 @@ $stats = [
     </a>
     <a class="dash-card" href="page-editor.php">
       <div class="dash-card-icon dash-icon-teal"><svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg></div>
-      <div class="dash-card-body"><h3>Page Editor</h3><p><?php echo $stats['pages']]; ?> pages available</p></div>
+      <div class="dash-card-body"><h3>Page Editor</h3><p><?php echo $stats['pages']; ?> pages available</p></div>
       <div class="dash-card-arrow"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></div>
     </a>
     <a class="dash-card" href="gallery-manager.php">

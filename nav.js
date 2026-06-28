@@ -37,10 +37,12 @@
   overlay     && overlay.addEventListener('click', closeMobile);
 
   /* Active nav link by current URL */
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const currentPage = window.location.pathname.split('/').pop() || 'index.php';
   document.querySelectorAll('.nav-link, .dropdown-link, .mobile-nav-link, .mobile-dropdown-link').forEach(link => {
     const href = (link.getAttribute('href') || '').split('?')[0];
-    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+    const isHome = currentPage === '' || currentPage === 'index.php' || currentPage === 'index.html';
+    const hrefIsHome = href === 'index.php' || href === 'index.html';
+    if (href === currentPage || (isHome && hrefIsHome)) {
       link.classList.add('active');
     }
   });
@@ -55,8 +57,15 @@
           revealObs.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12 });
-    revealEls.forEach(el => revealObs.observe(el));
+    }, { threshold: 0.05 });
+    revealEls.forEach(el => {
+      const r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight && r.bottom > 0) {
+        el.classList.add('visible');
+      } else {
+        revealObs.observe(el);
+      }
+    });
   }
 
   /* Counter animation */
@@ -108,10 +117,24 @@
   /* Back-to-top FAB */
   const fabTop = document.querySelector('.fab-top');
   if (fabTop) {
-    window.addEventListener('scroll', () => {
-      fabTop.classList.toggle('show', window.scrollY > 400);
-    }, { passive: true });
+    const checkFabTop = () => fabTop.classList.toggle('show', window.scrollY > 400);
+    window.addEventListener('scroll', checkFabTop, { passive: true });
+    checkFabTop();
     fabTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  }
+
+  /* Admin FAB — show only when footer is in view */
+  const fabAdmin = document.querySelector('.fab-admin');
+  if (fabAdmin) {
+    const footer = document.querySelector('.site-footer');
+    if (footer) {
+      const footerObs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          fabAdmin.classList.toggle('show', entry.isIntersecting);
+        });
+      }, { threshold: 0 });
+      footerObs.observe(footer);
+    }
   }
 
   /* Product carousel with arrow navigation (products.html) */

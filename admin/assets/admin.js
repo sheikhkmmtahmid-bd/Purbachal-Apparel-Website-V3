@@ -3,6 +3,16 @@
    ========================================================= */
 'use strict';
 
+// ── Favicon ──────────────────────────────────────────────────────────────────
+(function () {
+  if (!document.querySelector("link[rel~='icon']")) {
+    var l = document.createElement('link');
+    l.rel = 'icon'; l.type = 'image/png';
+    l.href = '../favicon-32.png';
+    document.head.appendChild(l);
+  }
+})();
+
 // ── CSRF helper ──────────────────────────────────────────────────────────────
 function getCsrfToken() {
   var m = document.querySelector('meta[name="csrf-token"]');

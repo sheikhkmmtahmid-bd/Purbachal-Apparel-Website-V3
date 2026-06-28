@@ -7,6 +7,7 @@ requireLogin();
 $pageTitle = 'Products Manager';
 $prods = jsonRead(DATA_DIR . 'pages/products.json');
 $cats = ['kids' => 'Kid\'s Wear', 'mens' => 'Men\'s Wear', 'womens' => 'Women\'s Wear'];
+$catImgs = $prods['categories'] ?? ['kids' => [], 'mens' => [], 'womens' => []];
 $error = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -23,11 +24,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'error' => $_FILES['images']['error'][$i],
                 'size' => $_FILES['images']['size'][$i],
             ];
-            $res = validateAndProcessUpload($file, UPLOAD_DIR . 'products/' . $cat . '/');
-            if ($res['ok']) { $prods[$cat][] = $res['filename']; }
+            $res = validateAndProcessUpload($file, UPLOAD_DIR . 'products/');
+            if ($res['ok']) { $prods['categories'][$cat][] = $res['filename']; }
             else { $error .= $res['error'] . ' '; }
         }
         jsonWrite(DATA_DIR . 'pages/products.json', $prods);
+        $catImgs = $prods['categories'];
     }
 }
 ?>
@@ -69,14 +71,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </form>
     </div>
   </div>
-  <?php foreach ($cats as $cat => $catLabel): $imgs = $prods[$cat] ?? []; ?>
+  <?php foreach ($cats as $cat => $catLabel): $imgs = $catImgs[$cat] ?? []; ?>
   <div class="card mb-4">
     <div class="card-header"><?php echo e($catLabel); ?> (<?php echo count($imgs); ?> images) <span class="text-muted small">drag to reorder</span></div>
     <div class="card-body">
       <div class="gallery-grid sortable-gallery" id="grid-<?php echo e($cat); ?>" data-cat="<?php echo e($cat); ?>">
         <?php foreach ($imgs as $img): ?>
         <div class="gallery-item" data-file="<?php echo e($img); ?>">
-          <img src="../uploads/products/<?php echo e($cat); ?>/<?php echo e($img); ?>" alt="" loading="lazy">
+          <img src="../uploads/products/<?php echo e($img); ?>" alt="" loading="lazy">
           <button class="gallery-delete" data-cat="<?php echo e($cat); ?>" data-file="<?php echo e($img); ?>" title="Delete">&times;</button>
         </div>
         <?php endforeach; ?>

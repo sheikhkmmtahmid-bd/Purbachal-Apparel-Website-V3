@@ -12,7 +12,7 @@ $error = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     requireCsrf();
     $fields = ['company_name','company_name_short','tagline','address','email','phone1','phone1_tel','phone2','phone2_tel','bgmea','erc','map_embed','footer_desc'];
-    $soc = ['facebook','linkedin','youtube','whatsapp'];
+    $soc = ['facebook','linkedin','youtube','whatsapp','twitter','instagram'];
     foreach ($fields as $f) $site[$f] = sanitize($_POST[$f] ?? '');
     foreach ($soc as $s) $site['social'][$s] = sanitize($_POST['social_'.$s] ?? '');
     // Handle logo upload
@@ -21,6 +21,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($res['ok']) {
             if (!empty($site['logo'])) @unlink(UPLOAD_DIR . 'logo/' . $site['logo']);
             $site['logo'] = $res['filename'];
+        } else { $error = $res['error']; }
+    }
+    // Handle dark logo upload
+    if (!empty($_FILES['logo_dark']['name'])) {
+        $res = validateAndProcessUpload($_FILES['logo_dark'], UPLOAD_DIR . 'logo/');
+        if ($res['ok']) {
+            if (!empty($site['logo_dark'])) @unlink(UPLOAD_DIR . 'logo/' . $site['logo_dark']);
+            $site['logo_dark'] = $res['filename'];
         } else { $error = $res['error']; }
     }
     // Handle favicon upload
@@ -91,7 +99,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="card mb-4">
           <div class="card-header">Social Links</div>
           <div class="card-body">
-            <?php $soc = ['facebook'=>'Facebook','linkedin'=>'LinkedIn','youtube'=>'YouTube','whatsapp'=>'WhatsApp (wa.me link)'];
+            <?php $soc = [
+              'facebook'  => 'Facebook',
+              'linkedin'  => 'LinkedIn',
+              'youtube'   => 'YouTube',
+              'whatsapp'  => 'WhatsApp (wa.me link)',
+              'twitter'   => 'X (Twitter)',
+              'instagram' => 'Instagram',
+            ];
             foreach ($soc as $k => $label): ?>
             <div class="form-group mb-3">
               <label><?php echo e($label); ?></label>
@@ -103,20 +118,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </div>
       <div class="col-md-4">
         <div class="card mb-4">
-          <div class="card-header">Logo</div>
+          <div class="card-header">Logo (Light - for dark backgrounds)</div>
           <div class="card-body text-center">
             <?php if (!empty($site['logo'])): ?>
-            <img src="../uploads/logo/<?php echo e($site['logo']); ?>" class="img-preview mb-2" alt="logo">
-            <?php else: ?><p class="text-muted small">No logo uploaded. Default will be used.</p><?php endif; ?>
+            <img src="../uploads/logo/<?php echo e($site['logo']); ?>" class="img-preview mb-2" alt="logo" onerror="this.style.display='none'">
+            <?php else: ?><p class="text-muted small mb-2">No logo uploaded yet.</p><?php endif; ?>
             <input type="file" name="logo" class="form-control" accept="image/*">
-            <p class="text-muted small mt-1">JPG/PNG/WEBP, max 10MB</p>
+            <p class="text-muted small mt-1">Used on the public site. JPG/PNG/WEBP, max 10MB.</p>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="card-header">Logo (Dark - for admin panel)</div>
+          <div class="card-body text-center">
+            <?php if (!empty($site['logo_dark'])): ?>
+            <img src="../uploads/logo/<?php echo e($site['logo_dark']); ?>" class="img-preview mb-2" alt="dark logo" onerror="this.style.display='none'">
+            <?php else: ?><p class="text-muted small mb-2">Using default: logo-dark.png from root.</p><?php endif; ?>
+            <input type="file" name="logo_dark" class="form-control" accept="image/*">
+            <p class="text-muted small mt-1">Used on admin login and all admin panel pages. Dark text version. JPG/PNG/WEBP, max 10MB.</p>
           </div>
         </div>
         <div class="card mb-4">
           <div class="card-header">Favicon</div>
           <div class="card-body text-center">
             <?php if (!empty($site['favicon'])): ?>
-            <img src="../uploads/favicon/<?php echo e($site['favicon']); ?>" width="64" height="64" class="mb-2" alt="favicon">
+            <img src="../uploads/favicon/<?php echo e($site['favicon']); ?>" width="64" height="64" class="mb-2" alt="favicon" onerror="this.style.display='none'">
             <?php else: ?><p class="text-muted small">No favicon uploaded.</p><?php endif; ?>
             <input type="file" name="favicon" class="form-control" accept="image/*">
             <p class="text-muted small mt-1">PNG recommended, max 10MB</p>

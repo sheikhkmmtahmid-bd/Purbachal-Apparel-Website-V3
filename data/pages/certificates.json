@@ -1,30 +1,77 @@
 {
-  "title": "Certifications | Purbachal Apparel Limited",
+  "title": "Our Certifications | Purbachal Apparel Limited",
   "meta_desc": "Purbachal Apparel Limited holds 12 international certifications including OEKO-TEX, GOTS, SEDEX, WRAP, ISO 14001, EcoVadis and more.",
+
   "hero_title": "Our Certifications",
-  "hero_desc": "We hold 12 internationally recognized certifications, ensuring that our production processes meet the highest ethical, environmental, and quality standards.",
-  "certs": [
-    {"name":"RSC","logo":"cert-rsc.png"},
-    {"name":"Amfori / BSCI","logo":"cert-bsci.png"},
-    {"name":"SEDEX","logo":"cert-sedex.png"},
-    {"name":"WRAP","logo":"cert-wrap.png"},
-    {"name":"Higg Index","logo":"cert-higg.png"},
-    {"name":"ISO 14001","logo":"cert-iso14001.png"},
-    {"name":"GOTS","logo":"cert-gots.png"},
-    {"name":"OCS","logo":"cert-ocs.png"},
-    {"name":"RCS","logo":"cert-rcs.png"},
-    {"name":"OEKO-TEX 100","logo":"cert-oeko.png"},
-    {"name":"EcoVadis","logo":"cert-ecovadis.png"},
-    {"name":"Cotton Made in Africa","logo":"cert-cotton-africa.png"}
+  "hero_desc": "Purbachal Apparel Limited holds 12 internationally recognized certifications that validate our commitment to quality, ethics, environmental responsibility, and worker welfare.",
+
+  "certs_eyebrow": "Certifications & Compliance",
+  "certs_heading": "We Are Certified By",
+  "certs_desc": "Our comprehensive portfolio of certifications reflects our rigorous adherence to global standards in production, labour practices, and environmental management.",
+  "cert_items": [
+    {"name": "RSC",                   "logo": "cert-rsc.png"},
+    {"name": "Amfori / BSCI",         "logo": "cert-bsci.png"},
+    {"name": "SEDEX",                 "logo": "cert-sedex.png"},
+    {"name": "WRAP",                  "logo": "cert-wrap.png"},
+    {"name": "Higg Index",            "logo": "cert-higg.png"},
+    {"name": "ISO 14001",             "logo": "cert-iso14001.png"},
+    {"name": "GOTS",                  "logo": "cert-gots.png"},
+    {"name": "OCS",                   "logo": "cert-ocs.png"},
+    {"name": "RCS",                   "logo": "cert-rcs.png"},
+    {"name": "OEKO-TEX Standard 100", "logo": "cert-oeko.png"},
+    {"name": "EcoVadis",              "logo": "cert-ecovadis.png"},
+    {"name": "Cotton Made in Africa", "logo": "cert-cotton-africa.png"}
   ],
-  "pillars": [
-    {"title":"Social Compliance","text":"We adhere to the highest social compliance standards, ensuring fair wages, safe working conditions, and zero tolerance for forced or child labor across our entire supply chain."},
-    {"title":"Environmental Standards","text":"Our ISO 14001 certification and ongoing sustainability initiatives demonstrate our commitment to minimizing environmental impact through responsible manufacturing practices."},
-    {"title":"Product Safety","text":"OEKO-TEX Standard 100 certification ensures that every fabric and finished garment we produce is tested for harmful substances and safe for all users."}
+
+  "pillars_eyebrow": "Why We Certify",
+  "pillars_heading": "Three Pillars of Our Compliance",
+  "pillars_desc": "Our certifications span three critical dimensions that define responsible and sustainable garment manufacturing.",
+  "pillar_items": [
+    {
+      "icon": "award",
+      "title": "Production Excellence",
+      "text": "ISO 14001, Higg Index, GOTS, OCS, and RCS certifications verify that our production processes meet stringent environmental and quality management standards throughout the entire supply chain."
+    },
+    {
+      "icon": "shield",
+      "title": "Ethical Compliance",
+      "text": "Certifications from RSC, Amfori/BSCI, SEDEX, WRAP, and EcoVadis confirm that our factory meets international standards for labour rights, health and safety, and responsible business conduct."
+    },
+    {
+      "icon": "user-check",
+      "title": "Worker Welfare",
+      "text": "OEKO-TEX Standard 100, Cotton Made in Africa, and our social compliance audits demonstrate our unwavering commitment to the health, safety, and dignity of every worker in our facility."
+    }
   ],
-  "csr_cards": [
-    {"title":"Worker Welfare Programs","text":"Regular health check-ups, skills training, and welfare benefits for all workers.","image":"csr-01.jpg"},
-    {"title":"Environmental Initiatives","text":"Solar energy adoption, water recycling, and waste reduction programs.","image":"csr-02.jpg"},
-    {"title":"Community Development","text":"Supporting local education, healthcare, and economic development in Gazipur.","image":"csr-03.jpg"}
-  ]
+
+  "csr_eyebrow": "Social Responsibility",
+  "csr_heading": "Compliance Goes Beyond Paper",
+  "csr_body": "Our certifications are backed by genuine on-the-ground action. From healthcare programmes to environmental initiatives, we embed responsibility into every aspect of our operations.",
+  "csr_link_text": "Explore our sustainability page",
+  "csr_link": "sustainability.php",
+  "csr_link_suffix": "to learn more.",
+  "csr_items": [
+    {
+      "icon": "leaf",
+      "title": "Environmental Management",
+      "text": "Tree plantation drives, rainwater harvesting, and a 300 KW solar energy target demonstrate our proactive approach to environmental stewardship."
+    },
+    {
+      "icon": "heart",
+      "title": "Employee Welfare",
+      "text": "Free healthcare services, fire safety training, anti-harassment policies, and skills development programmes are integral to our workforce strategy."
+    },
+    {
+      "icon": "users",
+      "title": "Community Engagement",
+      "text": "We actively participate in community development programmes, supporting education, health awareness, and emergency relief in and around Gazipur."
+    }
+  ],
+
+  "cta_title": "Compliance You Can Count On",
+  "cta_desc": "Source with confidence from a manufacturer that holds 12 international certifications and audits its practices continuously.",
+  "cta_btn1_text": "Contact Us",
+  "cta_btn1_link": "contact.php",
+  "cta_btn2_text": "Our Sustainability",
+  "cta_btn2_link": "sustainability.php"
 }

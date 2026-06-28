@@ -1,8 +1,8 @@
 <?php if (!defined('_PAL_CMS_')) die('Direct access not permitted.'); ?>
 <aside class="admin-sidebar" id="sidebar">
   <div class="sidebar-brand">
-    <span class="sidebar-brand-icon">
-      <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 00-1-1h-2a1 1 0 00-1 1v5m4 0H9"/></svg>
+    <span class="sidebar-brand-icon" style="background:none;padding:0;">
+      <img src="../favicon.png" alt="" style="width:28px;height:28px;object-fit:contain;display:block;">
     </span>
     <span>PAL CMS</span>
   </div>
@@ -16,6 +16,7 @@
       ['url' => 'products-manager.php', 'label' => 'Products', 'icon' => '<svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>'],
       ['url' => 'footer-editor.php', 'label' => 'Footer', 'icon' => '<svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>'],
       ['url' => 'page-builder.php', 'label' => 'Page Builder', 'icon' => '<svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>'],
+      ['url' => 'profile.php', 'label' => 'My Account', 'icon' => '<svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>'],
     ];
     foreach ($items as $item): $active = $item['url'] === $page ? ' active' : ''; ?>
     <a href="<?php echo e($item['url']); ?>" class="sidebar-nav-item<?php echo $active; ?>">

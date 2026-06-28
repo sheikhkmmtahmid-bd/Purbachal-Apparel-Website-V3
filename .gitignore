@@ -12,3 +12,4 @@ uploads/products/womens/*
 !uploads/**/.htaccess
 data/.login_attempts.json
 data/.credentials.json
+data/.reset_token.json

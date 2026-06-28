@@ -1,4 +1,12 @@
 Options -MultiViews
+ErrorDocument 400 /purbachal/400.php
+ErrorDocument 401 /purbachal/401.php
+ErrorDocument 403 /purbachal/403.php
+ErrorDocument 404 /purbachal/404.php
+ErrorDocument 405 /purbachal/405.php
+ErrorDocument 500 /purbachal/500.html
+ErrorDocument 503 /purbachal/503.html
+
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^.]+)\.html$ $1.php [L,R=301]
